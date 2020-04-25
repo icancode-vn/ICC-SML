@@ -254,7 +254,7 @@ class face_re():
 
     def cover_face(self,img, x1, y1, x2, y2):
         face = img[y1:y2, x1:x2]
-        face = anonymize_face_pixelate(face, 20)
+        face = anonymize_face_pixelate(face, 10)
         img[y1:y2, x1:x2] = face
         return img
     def draw_rect(self, img, boxes, predictions, cover_face=False):
@@ -264,11 +264,14 @@ class face_re():
             text = f"{predictions[i]}"
 
             x1, y1, x2, y2 = box
+            y2_old = y2
+            y2 = int( y2*1.1)
             cv2.rectangle(img, (x1, y1), (x2, y2), (80, 18, 236), 2)
             # Draw a label with a name below the face
             cv2.rectangle(img, (x1, y2 - 20), (x2, y2), (80, 18, 236), cv2.FILLED)
             font = cv2.FONT_HERSHEY_DUPLEX
             cv2.putText(img, text, (x1 + 6, y2 - 6), font, 0.3, (255, 255, 255), 1)
+            y2 = y2_old
             if(cover_face):
                 if(text == "unknown"):
                     img = self.cover_face(img, x1, y1, x2, y2)
@@ -283,15 +286,17 @@ class face_re():
         boxes[boxes < 0] = 0
         face_statuses = []
         yaws = []
+        emotion_texts = []
         for i in range(boxes.shape[0]):
             box = boxes[i, :]
             x1, y1, x2, y2 = box
 
             gray = cv2.cvtColor(raw_img, cv2.COLOR_BGR2GRAY)
-            aligned_face, face_status, yaw = self.fa.align(raw_img, gray, dlib.rectangle(left=x1, top=y1, right=x2, bottom=y2))
+            aligned_face, face_status, yaw, emotion_text = self.fa.align(raw_img, gray, dlib.rectangle(left=x1, top=y1, right=x2, bottom=y2))
             aligned_face = cv2.resize(aligned_face, (112, 112))
             face_statuses.append(face_status)
             yaws.append(yaw)
+            emotion_texts.append(emotion_text)
 
 
             aligned_face = aligned_face - 127.5
@@ -318,8 +323,8 @@ class face_re():
 
 
         else:
-            return False, [], [], "", ""
-        return True, boxes, predictions, face_statuses, yaws
+            return False, [], [], "", "", ""
+        return True, boxes, predictions, face_statuses, yaws, emotion_texts
         # for ((top, right, bottom, left), name) in zip(boxes, names):
         #     # draw the predicted face name on the image
         #     cv2.rectangle(image, (left, top), (right, bottom), (0, 255, 0), 2)

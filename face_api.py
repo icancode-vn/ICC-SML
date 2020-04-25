@@ -31,10 +31,11 @@ def add_face(img, name):
         face_module.add_face_2(img, name)
         res['success'] = True
         res['error'] = "None"
+        face_module.save_face_data()
         return res
 def face_processing(img):
     res = {}
-    success, boxes, predictions, face_status, yaw = face_module.re_face(img)
+    success, boxes, predictions, face_status, yaw, emotion_text = face_module.re_face(img)
     res['success'] = True
     res['boxes'] = boxes
     res['face_status'] = face_status
