@@ -17,6 +17,7 @@ $ source python3.6/bin/active
 # Run
 ```
 $ python face_api.py
+```
 
 #DEMO
 
