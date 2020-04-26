@@ -19,7 +19,7 @@ $ source python3.6/bin/active
 $ python face_api.py
 ```
 
-#DEMO
+# DEMO
 
 [Harassment prevention](https://drive.google.com/file/d/19rC4sli6zkylduSiSHubo3JTn7NdJOb4/view)
 
