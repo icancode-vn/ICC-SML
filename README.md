@@ -16,7 +16,8 @@ Our project includes 2 main components:
 
 You can build a frontend on top & reuse our existing features via api call.
 
-Face ID Management Demo (the code is using GPU & we are not publishing the code yet): [link](http://118.69.65.157:5000)
+Face ID Management Demo (the code is using GPU & we are not publishing the code yet): [link](http://118.69.65.157:5000).
+We provide the demo for celebrities recognition - wikipedia information tracking, emotion/demographics analysis. You can also register your face to the system, upload new url/photos for testing.
 
 ### 2. Learning Interface (Proprietary):
 We will consider to publish this as open source later.
@@ -49,3 +50,7 @@ $ python face_api.py
 [Attention analysis](https://drive.google.com/file/d/1I8E_1JCE5oD4lr1xc2YijEGMXSUAQHH-/view)
 
 [Emotion analysis](https://drive.google.com/file/d/1UbYNIJh3ZceSDasynRbTI-ItGtn8PvUY/view)
+
+[SML Interface](https://www.figma.com/proto/lNw4DH0AFnMycygUWplF3s/SML?node-id=1%3A2&scaling=min-zoom)
+
+[Face ID Management - Demo](http://118.69.65.157:5000)
