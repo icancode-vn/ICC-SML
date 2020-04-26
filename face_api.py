@@ -1,6 +1,6 @@
 
-from flask import Flask, render_template, request, make_response
-from flask_socketio import SocketIO, send, emit
+from flask import Flask, request
+from flask_socketio import SocketIO
 import os
 from werkzeug import secure_filename, SharedDataMiddleware
 import base64
@@ -40,6 +40,7 @@ def face_processing(img):
     res['boxes'] = boxes
     res['face_status'] = face_status
     res['yaw'] = (yaw=="Yawning")
+    res['emotion_text'] = emotion_text
     return res
 
 

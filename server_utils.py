@@ -46,33 +46,3 @@ def decode_image(image_str, type_decode=0):
         except Exception as e:
             print('Decode bytes image error: ', e)
             return None
-
-
-def check_key_cmnd_upload(form):
-    if 'front' in form and 'back' in form:
-        return 2
-    elif 'front' in form:
-        return 1
-    elif 'back' in form:
-        return 0
-    else:
-        return -1
-
-
-def save_img(img, folder, prefix=''):
-    name_save = datetime.now().strftime("%Y_%m_%d_%H_%M_%S_%f")
-    folder_path = UPLOAD_FOLDER + folder
-    if not os.path.exists(folder_path):
-        os.mkdir(folder_path)
-    if prefix != '':
-        img_path = os.path.abspath(folder_path + '/' + name_save + prefix + '.jpg')
-    else:
-        img_path = os.path.abspath(UPLOAD_FOLDER + prefix + name_save + '.jpg')
-    cv2.imwrite(img_path, img)
-    print('Image saved at ', img_path)
-    return img_path
-
-
-def check_content_type_file(file):
-    content_type = file.content_type.split('/')[0]
-    return content_type == 'image'
