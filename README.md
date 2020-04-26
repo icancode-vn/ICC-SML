@@ -7,7 +7,9 @@ An application of ICanCode - Hackcovy20 submission
 
 # Description
 Our project includes 2 main components:
+
 ### 1. AI Service: a Flask application that currently serves following features:
+
 + **Face recognition:** Allow a learner to register & login to the platform with Face ID
 + **Harassment prevention:** by automatically blurring the unknown people (have never registered with face ID to the learning system)
 + **Fatigue detection:** detect whether the listener is tired, sleepy
