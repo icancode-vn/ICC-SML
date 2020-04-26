@@ -1,12 +1,24 @@
 # ICC-SML
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 
-An application of ICanCode - hackathon submission
+An application of ICanCode - Hackcovy20 submission
+
 SML: Smart eMeeting & eLearning System
+
+# Description
+Our project includes 2 main components:
+1. AI Service: a Flask application that currently serves following features:
++ Face recognition
++ Harassment prevention by automatically blurring the unknown people (have never registered with face ID to the learning system)
++ Fatigue detection: detect whether the listener is tired, sleepy
++ Attention Analysis: Analyze attention level of viewer by tracking eyes gaze.
++ Emotion Analysis: Analyze the reaction level (positive/negative) of the viewer based on emotions (Happy, Neutral, Sad)
+
+2. Learning Interface: We will publish this as open source later.
 
 # Link model
 
-Get model from [link](https://drive.google.com/file/d/1w3saxS8RLuwsheWvOXR2AhMJKP_2v1PW/view?usp=sharing)
+Get ML model from [link](https://drive.google.com/file/d/1w3saxS8RLuwsheWvOXR2AhMJKP_2v1PW/view?usp=sharing)
 
 # Prepare environment
 ```

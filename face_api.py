@@ -10,19 +10,12 @@ from flask import jsonify
 from face_operator import  face_re
 
 
-
-
-
-
 app = Flask(__name__)
 app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {'/': os.path.join(os.path.dirname(__file__), 'static')})
 app.config["CACHE_TYPE"] = "null"
 socketio = SocketIO(app)
 
 face_module = face_re()
-
-
-
 
 
 def add_face(img, name):
