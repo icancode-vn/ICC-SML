@@ -39,6 +39,9 @@ $ source python3.6/bin/active
 $ python face_api.py
 ```
 
+# Designs
+Figma: https://www.figma.com/file/lNw4DH0AFnMycygUWplF3s/SML?node-id=14%3A1044
+
 # DEMOs (Can be reconstructed with this repo)
 
 [Harassment prevention](https://drive.google.com/file/d/19rC4sli6zkylduSiSHubo3JTn7NdJOb4/view)
