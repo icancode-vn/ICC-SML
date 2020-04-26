@@ -4,6 +4,10 @@
 An application of ICanCode - hackathon submission
 SML: Smart eMeeting & eLearning System
 
+# Link model
+
+Get model from [link](https://drive.google.com/file/d/1w3saxS8RLuwsheWvOXR2AhMJKP_2v1PW/view?usp=sharing)
+
 # Prepare environment
 ```
 $ virtualenv -p python3.6 python3.6
