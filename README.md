@@ -3,22 +3,24 @@
 
 An application of ICanCode - Hackcovy20 submission
 
-SML: Smart eMeeting & eLearning System
+##SML: Smart eMeeting & eLearning System
 
 # Description
 Our project includes 2 main components:
-1. AI Service: a Flask application that currently serves following features:
-+ Face recognition
-+ Harassment prevention by automatically blurring the unknown people (have never registered with face ID to the learning system)
-+ Fatigue detection: detect whether the listener is tired, sleepy
-+ Attention Analysis: Analyze attention level of viewer by tracking eyes gaze.
-+ Emotion Analysis: Analyze the reaction level (positive/negative) of the viewer based on emotions (Happy, Neutral, Sad)
+###1. AI Service: a Flask application that currently serves following features:
++ **Face recognition:** Allow a learner to register & login to the platform with Face ID
++ **Harassment prevention:** by automatically blurring the unknown people (have never registered with face ID to the learning system)
++ **Fatigue detection:** detect whether the listener is tired, sleepy
++ **Attention Analysis:** Analyze attention level of viewer by tracking eyes gaze.
++ **Emotion Analysis:** Analyze the reaction level (positive/negative) of the viewer based on emotions (Happy, Neutral, Sad)
 
-2. Learning Interface: We will publish this as open source later.
+###2. Learning Interface: We will publish this as open source later.
+Demo: [link][https://www.figma.com/proto/lNw4DH0AFnMycygUWplF3s/SML?node-id=1%3A2&scaling=min-zoom]
 
 # Link model
 
-Get ML model from [link](https://drive.google.com/file/d/1w3saxS8RLuwsheWvOXR2AhMJKP_2v1PW/view?usp=sharing)
+1. Get ML model from [link](https://drive.google.com/file/d/1w3saxS8RLuwsheWvOXR2AhMJKP_2v1PW/view?usp=sharing)
+2. Extract the model in the root of project folder
 
 # Prepare environment
 ```
