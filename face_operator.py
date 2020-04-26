@@ -325,9 +325,3 @@ class face_re():
         else:
             return False, [], [], "", "", ""
         return True, boxes, predictions, face_statuses, yaws, emotion_texts
-        # for ((top, right, bottom, left), name) in zip(boxes, names):
-        #     # draw the predicted face name on the image
-        #     cv2.rectangle(image, (left, top), (right, bottom), (0, 255, 0), 2)
-        #     y = top - 15 if top - 15 > 15 else top + 15
-        #     cv2.putText(image, name, (left, y), cv2.FONT_HERSHEY_SIMPLEX,
-        #                 0.75, (0, 255, 0), 2)
