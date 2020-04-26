@@ -52,5 +52,3 @@ $ python face_api.py
 [Emotion analysis](https://drive.google.com/file/d/1UbYNIJh3ZceSDasynRbTI-ItGtn8PvUY/view)
 
 [SML Interface](https://www.figma.com/proto/lNw4DH0AFnMycygUWplF3s/SML?node-id=1%3A2&scaling=min-zoom)
-
-[Face ID Management - Demo](http://118.69.65.157:5000)
