@@ -16,6 +16,8 @@ Our project includes 2 main components:
 
 You can build a frontend on top & reuse our existing features via api call.
 
+Face ID Management Demo (the code is using GPU & we are not publishing the code yet): [link](http://118.69.65.157:5000)
+
 ### 2. Learning Interface (Proprietary):
 We will consider to publish this as open source later.
 Demo: [link](https://www.figma.com/proto/lNw4DH0AFnMycygUWplF3s/SML?node-id=1%3A2&scaling=min-zoom)
@@ -36,7 +38,7 @@ $ source python3.6/bin/active
 $ python face_api.py
 ```
 
-# DEMO
+# DEMOs (Can be reconstructed with this repo)
 
 [Harassment prevention](https://drive.google.com/file/d/19rC4sli6zkylduSiSHubo3JTn7NdJOb4/view)
 
